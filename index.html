@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> Learning about Bacjbone.js </title>
+
+  <style type="text/css">
+    .time {
+      text-decoration: underline;
+    }
+   </style>
+
+</head>
+<body>
+
+  <form id="new-weight">
+    <label>Date:</label><input id="weight-date" name="weight-date" type="text"/>
+    <label>Weight:</label><input id="weight-value" name="weight-value" type="text"/>
+    <button type="submit">add</button>
+  </form>
+  <hr>
+  <div id="weight-container"></div>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
+  <script type="text/javascript" src="http://documentcloud.github.com/backbone/backbone-min.js"></script>
+  <script type="text/javascript" src="index.js"></script>        
+
+  <!-- Templates -->
+  <script type="text/template" id="weight-template">
+    <span class="time"><%= time %></span>
+    <span class="value"><%= value %></span>
+    <a href="#">edit</a>
+    <a href="#">delete</a>
+  </script>
+
+
+
+</body>
+</html>

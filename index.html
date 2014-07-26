@@ -12,6 +12,8 @@
 
 </head>
 <body>
+  <h1>Trying Backbone.js Weight Application</h1>
+  <hr>
 
   <form id="new-weight">
     <label>Date:</label><input id="weight-date" name="weight-date" type="text"/>
@@ -30,8 +32,10 @@
   <script type="text/template" id="weight-template">
     <span class="time"><%= time %></span>
     <span class="value"><%= value %></span>
-    <a href="#">edit</a>
-    <a href="#">delete</a>
+    <br>
+    <a href="#" class="edit-time">edit-time</a>
+    <a href="#" class="edit-value">edit-weight</a>
+    <a href="#" class="delete">delete</a>
   </script>
 
 
